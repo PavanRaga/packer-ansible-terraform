@@ -1,0 +1,33 @@
+---
+# - name: Install Docker Module for Python
+#   hosts: all
+#   become: yes
+#   tasks:
+#   - pip:
+#       name: docker
+
+# - name: Install docker
+#   hosts: all
+#   become: yes
+#   roles:
+#     - geerlingguy.docker
+
+- name: Start the container
+  hosts: all
+  become: yes
+  tasks:
+  # - name: pull an image
+  #   docker_image:
+  #     name: pavanraga/pigeonhole-app
+  #     source: pull
+  - name: start the container
+    docker_container:
+      image: pavanraga/pigeonhole-app
+      name: pigeonhole-app
+      restart: yes
+      ports:
+        - "3555:3555"
+
+
+      
+      
