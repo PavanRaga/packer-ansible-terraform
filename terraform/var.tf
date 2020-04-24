@@ -13,10 +13,10 @@ variable "public_subnet_cidr" {
   default = "10.0.0.0/28" #Need only one ip!
 }
 
-variable "ami" {
-  description = "Amazon Linux AMI"
-  # default = "pigeonlab-ami" #"ami-085925f297f89fce1" #bionic!
-}
+# variable "ami" {
+#   description = "Amazon Linux AMI"
+#   # default = "pigeonlab-ami" #"ami-085925f297f89fce1" #bionic!
+# }
 
 variable "pub_key_path" {
   description = "SSH Public Key path"

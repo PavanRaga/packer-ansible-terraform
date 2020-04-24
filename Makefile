@@ -1,7 +1,7 @@
 init:
 	cd terraform && ssh-keygen -f key && terraform init && cd -
 packer-build:
-	cd packer && packer build ami-template.json && cd -
+	./scripts/packer-build.sh
 terraform-plan:
 	cd terraform && terraform plan && cd -
 terraform-apply:
