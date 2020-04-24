@@ -38,3 +38,8 @@ resource "aws_instance" "appserver" {
   }
 
 }
+
+resource "aws_s3_bucket" "s3" {
+  bucket = "pavan-remote-state-bucket"
+  acl    = "private"
+}
