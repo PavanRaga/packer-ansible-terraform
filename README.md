@@ -1,4 +1,4 @@
-This repo helps in deploying a service to upload and retrive file on AWS EC2.
+This repo helps in provisioning the infrastructure for a microservice which uploads and retrives file on AWS EC2 using packer, ansible, terraform.
 
 # Pre-requisites:
 
