@@ -15,7 +15,7 @@ variable "public_subnet_cidr" {
 
 # variable "ami" {
 #   description = "Amazon Linux AMI"
-#   # default = "pigeonlab-ami" #"ami-085925f297f89fce1" #bionic!
+#   # default = "ami-085925f297f89fce1" #bionic!
 # }
 
 variable "pub_key_path" {
