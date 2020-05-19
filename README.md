@@ -1,4 +1,7 @@
-This repo helps in provisioning the infrastructure for a microservice which uploads and retrives file on AWS EC2 using packer, ansible, terraform.
+This repo serves as an example on how to provision infrastructure for distrubuted services.
+To keep it simple, i have written a simple microservice which exposed its API endpoints to uploads and retrives dummy files on AWS EC2 using packer, ansible, terraform.
+
+Main objective of this repo is to see tools such as packer, ansible, terraform in action and how they complement each other.
 
 # Pre-requisites:
 
