@@ -6,7 +6,7 @@
         "source_ami": "ami-085925f297f89fce1",
         "instance_type": "t2.micro",
         "ssh_username": "ubuntu",
-        "ami_name": "pigeonlab-ami"
+        "ami_name": "fileuploader-ami"
       }
     ],
     "provisioners": [

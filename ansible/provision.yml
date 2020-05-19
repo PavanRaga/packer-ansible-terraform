@@ -22,11 +22,11 @@
   #     source: pull
   - name: start the container
     docker_container:
-      image: pavanraga/pigeonhole-app
-      name: pigeonhole-app
+      image: pavanraga/fileuploader
+      name: fileuploader
       restart: yes
       ports:
-        - "3555:3555"
+        - "5000:5000"
 
 
       

@@ -4,7 +4,7 @@ resource "aws_vpc" "default" {
   enable_dns_hostnames = true
 
   tags = {
-    Name = "pigeonlab-vpc"
+    Name = "fileuploader-app"
   }
 }
 
@@ -54,8 +54,8 @@ resource "aws_security_group" "sg-app" {
   description = "Allow incoming HTTP connections & SSH access"
 
   ingress {
-    from_port = 3555
-    to_port = 3555
+    from_port = 5000
+    to_port = 5000
     protocol = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
