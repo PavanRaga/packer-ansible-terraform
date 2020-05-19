@@ -22,7 +22,7 @@
   #     source: pull
   - name: start the container
     docker_container:
-      image: pavanraga/fileuploader
+      image: pavanraga/fileupload
       name: fileuploader
       restart: yes
       ports:

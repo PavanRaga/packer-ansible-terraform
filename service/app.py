@@ -12,6 +12,7 @@ def upload_file():
 
 @app.route('/get', methods = ['GET'])
 def get_file():
+
    if request.method == 'GET':
        root_dir = os.path.dirname(os.getcwd())
        print(root_dir)
@@ -21,4 +22,4 @@ def get_file():
 
 		
 if __name__ == '__main__':
-   app.run(debug = True)
+   app.run("0.0.0.0", debug=True)
