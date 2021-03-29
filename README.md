@@ -19,3 +19,7 @@ Main objective of this repo is to see tools such as packer, ansible, terraform i
 4) Use "http://public-ip:5000/uploader" to upload file
 5) Use "http://serverip:5000/get?file=filename" to retrive file
 5) *make terrform-destroy* # this will de-provision the resources.
+
+# Arch:
+
+![Alt text](images/arch.png "LLD")

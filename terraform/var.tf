@@ -3,14 +3,35 @@ variable "aws_region" {
   default = "us-east-1" #because cheaper!
 }
 
-variable "vpc_cidr" {
-  description = "CIDR for the VPC"
-  default = "10.0.0.0/28"
+variable "app_port" {
+  type = string
+  default = "8080"
 }
 
-variable "public_subnet_cidr" {
+variable "public_subnet_sg_ports" {
+   type = list(string)
+   default = ["443","80","22","8080"]
+}
+
+variable "private_subnet_sg_ports" {
+   type = list(string)
+   default = ["443","80","22","8080"]
+}
+
+
+variable "vpc_cidr" {
+  description = "CIDR for the VPC"
+  default = "10.0.0.0/16"
+}
+
+variable "public_subnets" {
   description = "CIDR for the public subnet"
-  default = "10.0.0.0/28" #Need only one ip!
+  default = ["10.0.1.0/24", "10.0.4.0/24"] #Need only one ip!
+}
+
+variable "private_subnets" {
+  description = "CIDR for the public subnet"
+  default = ["10.0.2.0/24", "10.0.3.0/24"] #Need only one ip!
 }
 
 # variable "ami" {

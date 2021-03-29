@@ -20,6 +20,9 @@ def get_file():
        print(filename)
        return send_from_directory(root_dir, filename)
 
+@app.route('/health', methods = ['GET'])
+def health():
+   return "OK", 200
 		
 if __name__ == '__main__':
-   app.run("0.0.0.0", debug=True)
+   app.run("0.0.0.0", port=8080, debug=True)
