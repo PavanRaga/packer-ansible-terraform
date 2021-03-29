@@ -16,8 +16,8 @@ Main objective of this repo is to see tools such as packer, ansible, terraform i
 1) *make init* #This will create required SSH keys
 2) *make packer-build* #this will create AMI with required packages. ami-id will be written to terroform directory.
 3) *make terrform-apply* # this will provision and deploy the service to ec2.
-4) Use "http://public-ip:5000/uploader" to upload file
-5) Use "http://serverip:5000/get?file=filename" to retrive file
+4) Use "http://{elb-dns}/uploader" to upload file
+5) Use "http://{elb-dns}/get?file=filename" to retrive file
 5) *make terrform-destroy* # this will de-provision the resources.
 
 # Arch:
